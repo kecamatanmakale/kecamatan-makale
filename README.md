@@ -73,7 +73,7 @@ makale-website/
 ## 📞 Kontak
 **Pemerintah Kecamatan Makale**  
 Kabupaten Tana Toraja, Sulawesi Selatan  
-📧 Email: [contoh@makale.go.id](mailto:contoh@makale.go.id)  
+📧 Email: [kecamatanmakale@gmail.com](mailto:kecamatanmakale@gmail.com)  
 🌍 Website: [https://tanatorajakab.go.id](https://tanatorajakab.go.id)
 
 ---
