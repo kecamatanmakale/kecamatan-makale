@@ -23,58 +23,90 @@ Semua konten dan tampilan dibuat sederhana agar mudah diakses dari perangkat apa
 ---
 
 ## 🧩 Struktur Folder
+
+```
 makale-website/
 │
-├── index.html # Halaman utama
-├── profil.html # Profil Kecamatan
-├── camat.html # Profil Camat
-├── struktur.html # Struktur Organisasi
-├── layanan.html # Layanan publik
-├── berita.html # Berita & pengumuman
-├── potensi.html # Potensi daerah
-├── galeri-foto.html # Galeri foto interaktif
-├── galeri-video.html # Galeri video (YouTube embed)
-├── kontak.html # Kontak & informasi
+├── index.html
+├── profil.html
+├── camat.html
+├── struktur.html
+├── layanan.html
+├── berita.html
+├── potensi.html
+├── galeri-foto.html
+├── galeri-video.html
+├── kontak.html
 │
-├── assets/ # Folder aset lokal
-│ ├── logo-tanatoraja.png
-│ ├── camat-makale.png
-│ ├── background.jpg
-│ ├── icon-wa.png
-│ ├── icon-fb.png
-│ ├── icon-ig.png
-│ ├── icon-twitter.png
-│ └── (gambar kegiatan & galeri)
+├── assets/
+│   ├── logo-tanatoraja.png
+│   ├── camat-makale.png
+│   ├── background.jpg
+│   ├── icon-wa.png
+│   ├── icon-fb.png
+│   ├── icon-ig.png
+│   ├── icon-twitter.png
+│   └── (gambar kegiatan & galeri)
 │
-├── style.css # Desain tampilan (CSS)
-└── script.js # Interaksi & animasi (JavaScript)
+├── style.css
+└── script.js
+```
 
 ---
 
 ## 🧠 Cara Menjalankan Website
 
-### 💻 **Secara Offline**
+### 💻 Secara Offline
 1. Unduh semua file ke komputer kamu.  
 2. Ekstrak folder `makale-website`.  
 3. Klik dua kali `index.html` → situs langsung terbuka di browser.
 
-### 🌐 **Secara Online (GitHub Pages)**
+### 🌐 Secara Online (GitHub Pages)
 1. Upload isi folder ini ke repository GitHub kamu.  
 2. Aktifkan **GitHub Pages**:
    - Masuk ke tab **Settings → Pages**
-   - Pilih:  
-     - Branch: `main`  
-     - Folder: `/ (root)`  
+   - Pilih: Branch `main` dan Folder `/ (root)`
    - Klik **Save**
 3. Tunggu 1–2 menit, lalu buka:
+   ```
+   https://<username>.github.io/makale-website/
+   ```
 
 ---
 
 ## 📞 Kontak
 **Pemerintah Kecamatan Makale**  
 Kabupaten Tana Toraja, Sulawesi Selatan  
-📧 Email: [kecamatanmakale@gmail.com](mailto:kecamatanmakale@gmail.com)  
+📧 Email: [contoh@makale.go.id](mailto:contoh@makale.go.id)  
 🌍 Website: [https://tanatorajakab.go.id](https://tanatorajakab.go.id)
+
+---
+
+## 💬 Tentang Proyek Ini
+
+Website ini dikembangkan untuk mendukung transparansi informasi publik di lingkungan Kecamatan Makale, Kabupaten Tana Toraja.  
+Tujuan utamanya adalah menyediakan media informasi digital yang cepat, ringan, dan mudah diakses baik secara online maupun offline.
+
+Proyek ini dapat digunakan oleh instansi pemerintahan lain sebagai template website kecamatan atau kelurahan.
+
+---
+
+## 🙌 Kontribusi
+Jika Anda ingin membantu mengembangkan website ini (misalnya menambah fitur, mempercantik desain, atau memperbarui konten),  
+silakan buat *pull request* atau kirim masukan melalui halaman **Issues** di repository ini.
+
+---
+
+## 💡 Teknologi yang Digunakan
+- **HTML5**, **CSS3**, dan **JavaScript** murni  
+- **Desain responsif** tanpa framework berat  
+- **Animasi interaktif ringan** untuk pengalaman pengguna yang lebih hidup  
+- Siap di-host di **GitHub Pages**
+
+---
+
+## 💖 Kredit
+Proyek ini dibuat dengan semangat gotong royong untuk kemajuan layanan publik digital di Kabupaten Tana Toraja.
 
 ---
 
@@ -83,4 +115,4 @@ Website ini bersifat **non-komersial** dan dapat dimodifikasi untuk kebutuhan in
 
 ---
 
-© 2024 Pemerintah Kecamatan Makale — Kabupaten Tana Toraja
+© 2025 Pemerintah Kecamatan Makale — Kabupaten Tana Toraja
