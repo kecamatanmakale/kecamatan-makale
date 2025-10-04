@@ -83,4 +83,4 @@ Website ini bersifat **non-komersial** dan dapat dimodifikasi untuk kebutuhan in
 
 ---
 
-© 2025 Pemerintah Kecamatan Makale — Kabupaten Tana Toraja
+© 2024 Pemerintah Kecamatan Makale — Kabupaten Tana Toraja
