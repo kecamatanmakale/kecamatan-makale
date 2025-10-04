@@ -1,0 +1,1 @@
+Website 'makale-website' - buka index.html di browser. Assets use external URLs (internet required) or replace assets folder contents.
