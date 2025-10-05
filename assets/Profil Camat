@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Camat - Kecamatan Makale</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <div class="header">
+    <div class="left">
+      <img src="assets/camat.jpg" alt="Foto Camat">
+      <div class="caption">Camat Makale</div>
+    </div>
+    <div class="center">
+      <h1>PEMERINTAH KECAMATAN MAKALE</h1>
+      <h2>KABUPATEN TANA TORAJA</h2>
+    </div>
+    <div class="right">
+      <img src="assets/logo-toraja.png" alt="Logo Tana Toraja">
+    </div>
+  </div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li class="dropdown">
+        <a href="#" class="active">Profil ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="profil-camat.html" class="active">Profil Camat</a></li>
+          <li><a href="profil-kelurahan.html">Profil Kelurahan</a></li>
+        </ul>
+      </li>
+      <li><a href="layanan.html">Layanan</a></li>
+      <li><a href="berita.html">Berita</a></li>
+      <li><a href="potensi.html">Potensi</a></li>
+      <li class="dropdown">
+        <a href="#">Galeri ▾</a>
+        <ul class="dropdown-menu">
+          <li><a href="galeri-foto.html">Galeri Foto</a></li>
+          <li><a href="galeri-video.html">Galeri Video</a></li>
+        </ul>
+      </li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== CONTENT ===== -->
+  <section class="content">
+    <h2>Profil Camat Kecamatan Makale</h2>
+    <img src="assets/camat.jpg" alt="Foto Camat" style="width:200px; border-radius:10px;">
+    <p><strong>Nama:</strong> [Nama Camat]</p>
+    <p><strong>Riwayat Jabatan:</strong> [Isi di sini]</p>
+    <p><strong>Visi dan Misi:</strong></p>
+    <ul>
+      <li>Menjadi pemimpin yang melayani masyarakat dengan integritas dan transparansi.</li>
+      <li>Mendorong kemajuan Makale melalui kolaborasi dan inovasi.</li>
+    </ul>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>© 2025 Pemerintah Kecamatan Makale</p>
+  </footer>
+
+</body>
+</html>
