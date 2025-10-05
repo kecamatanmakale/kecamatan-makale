@@ -26,7 +26,7 @@ background: url('../assets/header-bg.jpg') no-repeat center center fixed;
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("../assets/pattern-toraja.png");
+  background-image: url("/kecamatan-makale/assets/pattern-toraja.png");
   background-repeat: repeat;
   background-size: 120px;
   opacity: 0.08;
