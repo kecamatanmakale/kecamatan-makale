@@ -102,6 +102,54 @@ background: url('../assets/header-bg.jpg') no-repeat center center fixed;
 
 
 /* === NAVBAR === */
+/* === NAVBAR === */
+.navbar {
+  background: linear-gradient(135deg, #5a0e0e, #7a261a, #a0522d);
+  border-bottom: 3px solid #4b2e05;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  flex-wrap: wrap;
+}
+
+.navbar li {
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  padding: 14px 25px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 8px;
+}
+
+.navbar a:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.navbar a.active {
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: 600;
+}
+
+/* === RUNNING TEXT === */
+.running-text {
+  background-color: #4b2e05;
+  color: #fff;
+  padding: 8px 0;
+  font-weight: 500;
+  border-bottom: 3px solid #a0522d;
+}
+
 nav { background: rgba(0,0,0,0.88); color:#fff; }
 nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; flex-wrap:wrap; }
 nav li { position:relative; }
