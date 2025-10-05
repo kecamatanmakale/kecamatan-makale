@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profil Camat - Kecamatan Makale</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER & NAVBAR -->
+  <!-- (copy dari index.html biar seragam) -->
+
+  <div class="content">
+    <h2>Profil Camat Kecamatan Makale</h2>
+    <p>Berisi informasi biodata, riwayat jabatan, dan program kerja Camat Makale.</p>
+  </div>
+
+  <footer>
+    <p>© 2025 Pemerintah Kecamatan Makale</p>
+  </footer>
+
+</body>
+</html>
