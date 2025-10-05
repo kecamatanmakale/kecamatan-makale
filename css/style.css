@@ -8,15 +8,7 @@ body {
   color: #222;
   -webkit-font-smoothing:antialiased;
 }
-header { display:flex; align-items:center; justify-content:space-between; padding:12px 24px; background: rgba(255,255,255,0.92); backdrop-filter: blur(4px); }
-header img.logo-camat { height:78px; border-radius:8px; }
-.header-center { text-align:center; flex:1; }
-.header-center h1 { margin:0; font-size:26px; color:#1f3a57; letter-spacing:0.6px; }
-.header-center h2 { margin:0; font-size:15px; color:#556; font-weight:400; }
-.camat-section { text-align:center; min-width:110px; }
-.camat-section img { height:78px; border-radius:8px; }
-/* ===== HEADER DENGAN LATAR MAKALe ===== */
-/* ===== HEADER DENGAN LATAR MAKALe (FINAL STYLE) ===== */
+/* ===== HEADER DENGAN EFEK BLUR & GAMBAR TAMPIL ===== */
 .header {
   position: relative;
   display: flex;
@@ -24,40 +16,45 @@ header img.logo-camat { height:78px; border-radius:8px; }
   justify-content: space-between;
   padding: 30px 40px;
   color: #fff;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
   background: url("../assets/bg.jpg") center/cover no-repeat;
   border-bottom: 4px solid #ccc;
   flex-wrap: wrap;
   overflow: hidden;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
 }
 
-/* Overlay gradasi lembut untuk memperjelas teks */
+/* Overlay blur transparan */
 .header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.55));
-  z-index: 0;
+  background: rgba(0, 0, 0, 0.35);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+  z-index: 0; /* di bawah elemen isi */
 }
 
-/* Pastikan isi header muncul di atas overlay */
+/* Pastikan isi header (termasuk gambar) tampil di atas */
 .header > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* Kolom kiri dan kanan */
+/* Kolom kiri & kanan */
 .header .left,
 .header .right {
   text-align: center;
   flex: 0 0 150px;
 }
 
+/* Gambar camat dan logo */
 .header img {
-  height: 100px;
+  height: 110px;
   width: auto;
   border-radius: 10px;
-  box-shadow: 0 0 8px rgba(0,0,0,0.3);
+  background: rgba(255, 255, 255, 0.9);
+  padding: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   transition: transform 0.2s ease;
 }
 
@@ -65,7 +62,7 @@ header img.logo-camat { height:78px; border-radius:8px; }
   transform: scale(1.05);
 }
 
-/* Kolom tengah (judul) */
+/* Teks tengah */
 .header .center {
   text-align: center;
   flex: 1;
@@ -75,27 +72,26 @@ header img.logo-camat { height:78px; border-radius:8px; }
 .header .center h1 {
   font-size: 26px;
   margin: 5px 0;
-  font-weight: 700;
-  letter-spacing: 0.8px;
+  font-weight: bold;
   color: #fff;
 }
 
 .header .center h2 {
   font-size: 17px;
   margin: 0;
-  opacity: 0.95;
   color: #f0f0f0;
+  opacity: 0.9;
 }
 
-/* Caption di bawah foto */
+/* Caption kecil di bawah foto */
 .header .caption {
   font-size: 13px;
-  color: #eee;
+  color: #ddd;
   margin-top: 6px;
   font-style: italic;
 }
 
-/* Responsif untuk layar kecil */
+/* Responsif */
 @media (max-width: 768px) {
   .header {
     flex-direction: column;
@@ -104,7 +100,7 @@ header img.logo-camat { height:78px; border-radius:8px; }
   }
 
   .header img {
-    height: 85px;
+    height: 90px;
   }
 
   .header .center h1 {
@@ -113,10 +109,6 @@ header img.logo-camat { height:78px; border-radius:8px; }
 
   .header .center h2 {
     font-size: 15px;
-  }
-
-  .header .caption {
-    font-size: 12px;
   }
 }
 
