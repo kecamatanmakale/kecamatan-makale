@@ -86,7 +86,7 @@ body {
 
 /* === LOGO KABUPATEN === */
 .header .right img {
-  width: 70px; /* sedikit lebih kecil */
+  width: 90px; /* sedikit lebih kecil */
   height: auto;
   border-radius: 10px;
   object-fit: contain;
