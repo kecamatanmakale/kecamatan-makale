@@ -11,6 +11,7 @@ background: url('../assets/header-bg.jpg') no-repeat center center fixed;
 
 /* === HEADER GRADIENT TORAJA === */
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -18,11 +19,9 @@ background: url('../assets/header-bg.jpg') no-repeat center center fixed;
   color: #fff;
   padding: 20px 40px;
   border-bottom: 5px solid #4b2e05;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  overflow: hidden;
 }
 
-/* Efek pattern Toraja */
 .header::before {
   content: "";
   position: absolute;
@@ -32,6 +31,11 @@ background: url('../assets/header-bg.jpg') no-repeat center center fixed;
   background-size: 120px;
   opacity: 0.08;
   z-index: 0;
+}
+
+.header * {
+  position: relative;
+  z-index: 1;
 }
 
 .header > div {
