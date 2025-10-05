@@ -1,128 +1,38 @@
+<header class="header">
+  <!-- Kiri: Foto Camat -->
+  <div class="left">
+    <img src="assets/camat.png" alt="Foto Camat Makale">
+    <div class="caption">Camat Makale</div>
+  </div>
 
-* { box-sizing: border-box; }
-body {
-  margin: 0;
-  font-family: "Segoe UI", Arial, sans-serif;
-  background: url('../assets/bg.jpg') no-repeat center center fixed;
-  background-size: cover;
-  color: #222;
-  -webkit-font-smoothing:antialiased;
-}
-/* === HEADER GRADIENT TORAJA === */
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: linear-gradient(135deg, #8b0000, #a0522d, #d2691e);
-  color: #fff;
-  padding: 20px 40px;
-  border-bottom: 5px solid #4b2e05;
-  position: relative;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
-}
+  <!-- Tengah: Judul Website -->
+  <div class="center">
+    <h1>PEMERINTAH KECAMATAN MAKALE</h1>
+    <h2>KABUPATEN TANA TORAJA</h2>
+  </div>
 
-/* Efek pattern Toraja */
-.header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("assets/pattern-toraja.png");
-  background-repeat: repeat;
-  background-size: 120px;
-  opacity: 0.08;
-  z-index: 0;
-}
+  <!-- Kanan: Logo Kabupaten -->
+  <div class="right">
+    <img src="assets/logo-tana-toraja.png" alt="Logo Kabupaten Tana Toraja">
+  </div>
+</header>
 
-.header > div {
-  position: relative;
-  z-index: 1;
-}
+<!-- Navigasi -->
+<nav>
+  <ul>
+    <li><a href="index.html" class="active">Beranda</a></li>
+    <li><a href="profil.html">Profil</a></li>
+    <li><a href="layanan.html">Layanan</a></li>
+    <li><a href="berita.html">Berita</a></li>
+    <li><a href="potensi.html">Potensi</a></li>
+    <li><a href="galeri.html">Galeri</a></li>
+    <li><a href="kontak.html">Kontak</a></li>
+  </ul>
+</nav>
 
-/* === FOTO CAMAT === */
-.header .left {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.header .left img {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  object-fit: cover;
-  border: 3px solid #fff;
-  box-shadow: 0 0 10px rgba(255,255,255,0.7);
-}
-
-.header .left .caption {
-  font-size: 0.85rem;
-  font-style: italic;
-  color: #ffe8b3;
-  margin-top: 6px;
-}
-
-/* === TENGAH (JUDUL) === */
-.header .center {
-  text-align: center;
-}
-
-.header .center h1 {
-  font-size: 1.9rem;
-  margin: 0;
-  font-weight: 700;
-  letter-spacing: 1px;
-  color: #fff8dc;
-  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-}
-
-.header .center h2 {
-  font-size: 1.1rem;
-  margin-top: 5px;
-  color: #ffe4b5;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
-}
-.header .left img {
-  width: 100px;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
-}
-
-/* === LOGO KABUPATEN === */
-.header .right img {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  border: 3px solid #fff;
-  object-fit: contain;
-  box-shadow: 0 0 10px rgba(255,255,255,0.7);
-}
-
-nav { background: rgba(0,0,0,0.88); color:#fff; }
-nav ul { list-style:none; margin:0; padding:0; display:flex; justify-content:center; flex-wrap:wrap; }
-nav li { position:relative; }
-nav a { display:block; padding:12px 18px; color:#fff; text-decoration:none; font-weight:600; transition:background .2s; }
-nav a:hover, nav a.active { background: rgba(255,255,255,0.12); }
-nav li ul { display:none; position:absolute; top:44px; background:rgba(0,0,0,0.95); border-radius:4px; overflow:hidden; min-width:180px; z-index:90; }
-nav li:hover>ul { display:block; animation: pop .18s ease; }
-nav li ul li a { padding:10px 14px; }
-.running-text { background: rgba(255,255,255,0.92); padding:8px 12px; border-top:1px solid #e6e6e6; border-bottom:1px solid #e6e6e6; overflow:hidden; white-space:nowrap; }
-.running-text .ticker { display:inline-block; padding-left:100%; animation:scroll 22s linear infinite; }
-@keyframes scroll { from { transform:translateX(0%);} to { transform:translateX(-100%);} }
-@keyframes pop { from {opacity:0; transform:translateY(-6px);} to {opacity:1; transform:translateY(0);} }
-.container { display:flex; gap:20px; padding:20px; max-width:1200px; margin:18px auto; }
-.content { flex:3; background: rgba(255,255,255,0.96); padding:18px; border-radius:10px; min-height:360px; box-shadow:0 6px 18px rgba(0,0,0,0.06);}
-.sidebar { flex:1; background: rgba(255,255,255,0.96); padding:12px; border-radius:10px; min-height:360px; }
-.sidebar h3 { margin-top:0; }
-.sidebar img { width:100%; border-radius:8px; margin-bottom:8px; cursor:pointer; transition:transform .18s; }
-.sidebar img:hover { transform:scale(1.03); }
-.gallery-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(150px,1fr)); gap:10px; margin-top:10px;}
-.gallery-grid img { width:100%; height:110px; object-fit:cover; border-radius:8px; cursor:pointer; }
-footer { text-align:center; padding:14px; background:rgba(0,0,0,0.88); color:#fff; margin-top:18px; }
-.social-icons img { height:28px; margin:0 8px; vertical-align:middle; }
-.modal { display:none; position:fixed; z-index:999; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.85); align-items:center; justify-content:center; padding:20px;}
-.modal img { max-width:92%; max-height:84%; border-radius:8px; }
-.modal .close { position:absolute; top:26px; right:28px; color:#fff; font-size:30px; cursor:pointer; }
-@media(max-width:880px){ header { flex-direction:column; gap:10px;} .container{flex-direction:column; padding:12px;} nav ul{justify-content:space-around;} .header-center h1{font-size:20px;} }
-
+<!-- Running text pengumuman -->
+<div class="running-text">
+  <div class="ticker">
+    Selamat datang di Website Resmi Pemerintah Kecamatan Makale, Kabupaten Tana Toraja — Mari bersama membangun pelayanan publik yang lebih baik!
+  </div>
+</div>
