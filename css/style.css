@@ -198,3 +198,29 @@ footer {
   .container { flex-direction:column; padding:12px; }
   nav ul { justify-content:space-around; }
 }
+/* === Layout Utama: Konten dan Sidebar === */
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* === Konten di kiri === */
+.content {
+  flex: 3;
+}
+
+/* === Sidebar di kanan === */
+.sidebar {
+  flex: 1;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.sidebar img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
