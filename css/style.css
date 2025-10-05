@@ -15,6 +15,72 @@ header img.logo-camat { height:78px; border-radius:8px; }
 .header-center h2 { margin:0; font-size:15px; color:#556; font-weight:400; }
 .camat-section { text-align:center; min-width:110px; }
 .camat-section img { height:78px; border-radius:8px; }
+/* ===== HEADER DENGAN LATAR MAKALe ===== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 40px;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+  background: url("../assets/bg.jpg") center/cover no-repeat;
+  border-bottom: 4px solid #ccc;
+  flex-wrap: wrap;
+}
+
+/* Kolom kiri dan kanan */
+.header .left, .header .right {
+  text-align: center;
+  flex: 0 0 150px;
+}
+
+.header img {
+  height: 100px;
+  width: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.3);
+}
+
+/* Teks tengah */
+.header .center {
+  text-align: center;
+  flex: 1;
+  min-width: 250px;
+}
+
+.header .center h1 {
+  font-size: 24px;
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+.header .center h2 {
+  font-size: 16px;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .header img {
+    height: 80px;
+  }
+
+  .header .center h1 {
+    font-size: 20px;
+  }
+
+  .header .center h2 {
+    font-size: 14px;
+  }
+}
+
 /* ====== HEADER STYLE ====== */
 .header {
   display: flex;
