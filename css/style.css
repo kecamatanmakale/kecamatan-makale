@@ -8,108 +8,89 @@ body {
   color: #222;
   -webkit-font-smoothing:antialiased;
 }
-/* ===== HEADER DENGAN EFEK BLUR & GAMBAR TAMPIL ===== */
+/* === HEADER GRADIENT TORAJA === */
 .header {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 30px 40px;
+  align-items: center;
+  background: linear-gradient(135deg, #8b0000, #a0522d, #d2691e);
   color: #fff;
-  background: url("../assets/bg.jpg") center/cover no-repeat;
-  border-bottom: 4px solid #ccc;
-  flex-wrap: wrap;
-  overflow: hidden;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+  padding: 20px 40px;
+  border-bottom: 5px solid #4b2e05;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* Overlay blur transparan */
+/* Efek pattern Toraja */
 .header::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  z-index: 0; /* di bawah elemen isi */
+  background-image: url("assets/pattern-toraja.png");
+  background-repeat: repeat;
+  background-size: 120px;
+  opacity: 0.08;
+  z-index: 0;
 }
 
-/* Pastikan isi header (termasuk gambar) tampil di atas */
-.header > * {
+.header > div {
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
-/* Kolom kiri & kanan */
-.header .left,
-.header .right {
+/* === FOTO CAMAT === */
+.header .left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  flex: 0 0 150px;
 }
 
-/* Gambar camat dan logo */
-.header img {
-  height: 110px;
-  width: auto;
-  border-radius: 10px;
-  background: rgba(255, 255, 255, 0.9);
-  padding: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  transition: transform 0.2s ease;
+.header .left img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  object-fit: cover;
+  border: 3px solid #fff;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
-.header img:hover {
-  transform: scale(1.05);
+.header .left .caption {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #ffe8b3;
+  margin-top: 6px;
 }
 
-/* Teks tengah */
+/* === TENGAH (JUDUL) === */
 .header .center {
   text-align: center;
-  flex: 1;
-  min-width: 250px;
 }
 
 .header .center h1 {
-  font-size: 26px;
-  margin: 5px 0;
-  font-weight: bold;
-  color: #fff;
+  font-size: 1.9rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #fff8dc;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
 }
 
 .header .center h2 {
-  font-size: 17px;
-  margin: 0;
-  color: #f0f0f0;
-  opacity: 0.9;
+  font-size: 1.1rem;
+  margin-top: 5px;
+  color: #ffe4b5;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
 }
 
-/* Caption kecil di bawah foto */
-.header .caption {
-  font-size: 13px;
-  color: #ddd;
-  margin-top: 6px;
-  font-style: italic;
-}
-
-/* Responsif */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-  }
-
-  .header img {
-    height: 90px;
-  }
-
-  .header .center h1 {
-    font-size: 22px;
-  }
-
-  .header .center h2 {
-    font-size: 15px;
-  }
+/* === LOGO KABUPATEN === */
+.header .right img {
+  width: 100px;
+  height: 100px;
+  border-radius: 15px;
+  border: 3px solid #fff;
+  object-fit: contain;
+  box-shadow: 0 0 10px rgba(255,255,255,0.7);
 }
 
 nav { background: rgba(0,0,0,0.88); color:#fff; }
