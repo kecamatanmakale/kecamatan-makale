@@ -41,3 +41,69 @@ footer { text-align:center; padding:14px; background:rgba(0,0,0,0.88); color:#ff
 .modal img { max-width:92%; max-height:84%; border-radius:8px; }
 .modal .close { position:absolute; top:26px; right:28px; color:#fff; font-size:30px; cursor:pointer; }
 @media(max-width:880px){ header { flex-direction:column; gap:10px;} .container{flex-direction:column; padding:12px;} nav ul{justify-content:space-around;} .header-center h1{font-size:20px;} }
+/* ====== HEADER STYLE ====== */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, #ffffff, #f4f4f4);
+  padding: 10px 30px;
+  border-bottom: 3px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.header .left,
+.header .right {
+  text-align: center;
+}
+
+.header img {
+  height: 90px;
+  width: auto;
+  border-radius: 6px;
+}
+
+.header .caption {
+  font-size: 13px;
+  color: #333;
+  margin-top: 5px;
+}
+
+.header .center {
+  text-align: center;
+  flex: 1;
+  min-width: 200px;
+}
+
+.header .center h1 {
+  font-size: 22px;
+  margin: 5px 0;
+  color: #222;
+  font-weight: bold;
+}
+
+.header .center h2 {
+  font-size: 16px;
+  color: #444;
+  margin: 0;
+}
+
+/* Responsif di layar kecil */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header img {
+    height: 70px;
+  }
+
+  .header .center h1 {
+    font-size: 18px;
+  }
+
+  .header .center h2 {
+    font-size: 14px;
+  }
+}
