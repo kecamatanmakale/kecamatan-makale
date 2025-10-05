@@ -86,13 +86,16 @@ body {
 
 /* === LOGO KABUPATEN === */
 .header .right img {
-  width: 100px;
-  height: 100px;
-  border-radius: 15px;
-  border: 3px solid #fff;
+  width: 90px; /* sedikit lebih kecil */
+  height: auto;
+  border-radius: 10px;
   object-fit: contain;
-  box-shadow: 0 0 10px rgba(255,255,255,0.7);
+  background: none; /* hapus latar belakang putih */
+  border: none; /* hilangkan garis tepi */
+  box-shadow: none; /* hapus bayangan */
+  padding: 0;
 }
+
 
 /* === NAVBAR === */
 nav { background: rgba(0,0,0,0.88); color:#fff; }
