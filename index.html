@@ -1,41 +1,61 @@
-<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beranda - Pemerintah Kecamatan Makale</title><link rel="stylesheet" href="css/style.css"></head><body><header>
-  <img class="logo-camat" src="assets/camat.png" alt="Foto Camat">
-  <div class="header-center">
-    <h1>PEMERINTAH KECAMATAN MAKALE</h1>
-    <h2>KABUPATEN TANA TORAJA</h2>
-  </div>
-  <div class="camat-section">
-    <img src="assets/logo.png" alt="Logo Kabupaten">
-    <div style="font-size:14px;color:#444;margin-top:6px;">Camat Makale</div>
-  </div>
+<!doctype html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beranda - Pemerintah Kecamatan Makale</title><link rel="stylesheet" href="css/style.css"></head><body><div class="site-overlay"></div>
+<header class="header">
+  <div class="left"><img src="assets/images/camat.png" alt="Foto Camat"></div>
+  <div class="center"><h1>PEMERINTAH KECAMATAN MAKALE</h1><h2>KABUPATEN TANA TORAJA</h2></div>
+  <div class="right"><img src="assets/images/logo-tana-toraja.png" alt="Logo Kabupaten"></div>
 </header>
-
 <nav>
   <ul>
     <li><a href="index.html">Beranda</a></li>
-    <li><a href="#">Profil</a>
-      <ul>
-        <li><a href="profil.html">Profil Kecamatan</a></li>
-        <li><a href="camat.html">Profil Camat</a></li>
-        <li><a href="struktur.html">Struktur Organisasi</a></li>
-      </ul>
-    </li>
+    <li><a href="profil.html">Profil</a></li>
     <li><a href="layanan.html">Layanan</a></li>
     <li><a href="berita.html">Berita</a></li>
     <li><a href="potensi.html">Potensi</a></li>
-    <li><a href="#">Galeri</a>
-      <ul>
-        <li><a href="galeri-foto.html">Foto</a></li>
-        <li><a href="galeri-video.html">Video</a></li>
-      </ul>
-    </li>
+    <li><a href="galeri-foto.html">Galeri</a></li>
     <li><a href="kontak.html">Kontak</a></li>
   </ul>
 </nav>
-<div class="running-text"><div class="ticker" id="newsTicker">Memuat berita...</div></div><div class="container"><main class="content"><h2>Selamat Datang</h2><p>Selamat datang di website resmi Pemerintah Kecamatan Makale. Situs ini menyediakan informasi publik terkait pelayanan, berita, potensi daerah, dan galeri kegiatan di Kecamatan Makale.</p><section style="margin-top:18px;"><h3>Highlight</h3><div style="display:flex;gap:12px;flex-wrap:wrap;"><article style="flex:1;min-width:220px;background:#fff;padding:12px;border-radius:8px;"><h4>Pelayanan Publik</h4><p>Informasi layanan administrasi kependudukan, perizinan, dan layanan masyarakat lainnya.</p></article><article style="flex:1;min-width:220px;background:#fff;padding:12px;border-radius:8px;"><h4>Berita</h4><p>Update kegiatan Pemerintah Kecamatan Makale dan pengumuman penting untuk warga.</p></article></div></section></main><aside class="sidebar"><h3>Foto Kegiatan</h3><div class="gallery-grid"><img class="gallery-item" data-src="assets/gallery1.jpg" alt="keg1"><img class="gallery-item" data-src="assets/gallery2.jpg" alt="keg2"><img class="gallery-item" data-src="assets/gallery3.jpg" alt="plaza"><img class="gallery-item" data-src="assets/gallery4.jpg" alt="keg4"></div><p style="margin-top:8px;"><small>Klik foto untuk memperbesar dan melihat caption.</small></p><div style="margin-top:18px;"><h4>Bagikan</h4><div style="display:flex;gap:8px;margin-top:8px;"><button data-share="whatsapp">WhatsApp</button><button data-share="facebook">Facebook</button><button data-share="twitter">Twitter</button><button data-share="instagram">Instagram</button></div></div></aside></div>
-<!-- Modal preview -->
-<div id="imgModal" class="modal" style="display:none;">
-  <div class="close" id="closeModal">&times;</div>
-  <img id="modalImg" src="" alt="Preview">
+<div class="running-text"><div class="ticker" id="newsTicker">Memuat berita...</div></div>
+
+<div class="container">
+  <main class="content">
+    <h2>Selamat Datang</h2>
+    <p>Selamat datang di website resmi Pemerintah Kecamatan Makale. Situs ini menyediakan informasi publik terkait pelayanan, berita, potensi daerah, dan galeri kegiatan di Kecamatan Makale.</p>
+    <section style="margin-top:18px;">
+      <h3>Highlight</h3>
+      <div style="display:flex;gap:12px;flex-wrap:wrap;">
+        <article style="flex:1;min-width:220px;background:#fff;padding:12px;border-radius:8px;">
+          <h4>Pelayanan Publik</h4>
+          <p>Informasi layanan administrasi kependudukan, perizinan, dan layanan masyarakat lainnya.</p>
+        </article>
+        <article style="flex:1;min-width:220px;background:#fff;padding:12px;border-radius:8px;">
+          <h4>Berita</h4>
+          <p>Update kegiatan Pemerintah Kecamatan Makale dan pengumuman penting untuk warga.</p>
+        </article>
+      </div>
+    </section>
+    <section style="margin-top:18px;">
+      <h3>Galeri Singkat</h3>
+      <div class="gallery-grid">
+        <img class="gallery-item" data-src="assets/images/kegiatan/keg1.jpg" alt="keg1">
+        <img class="gallery-item" data-src="assets/images/kegiatan/keg2.jpg" alt="keg2">
+        <img class="gallery-item" data-src="assets/images/kegiatan/keg3.jpg" alt="keg3">
+        <img class="gallery-item" data-src="assets/images/kegiatan/plaza.jpg" alt="plaza">
+      </div>
+    </section>
+  </main>
+
+  <aside class="sidebar">
+    <h3>Foto Kegiatan</h3>
+    <img class="gallery-item" data-src="assets/images/kegiatan/keg1.jpg" alt="keg1">
+    <p><small>Musyawarah Kecamatan</small></p>
+    <img class="gallery-item" data-src="assets/images/kegiatan/keg2.jpg" alt="keg2">
+    <p><small>Gotong Royong</small></p>
+    <img class="gallery-item" data-src="assets/images/kegiatan/plaza.jpg" alt="plaza">
+    <p><small>Plaza Kolam Makale</small></p>
+  </aside>
 </div>
-<footer><div class="social-icons"><img src="assets/icon_whatsapp.png" alt="whatsapp"><img src="assets/icon_facebook.png" alt="facebook"><img src="assets/icon_instagram.png" alt="instagram"><img src="assets/icon_twitter.png" alt="twitter"></div><p style="margin-top:8px;">&copy; 2025 Pemerintah Kecamatan Makale - Kabupaten Tana Toraja</p></footer><script src="js/script.js"></script></body></html>
+
+<div id="imgModal" class="modal"><div class="close" id="closeModal">&times;</div><img id="modalImg" src=""></div>
+<footer><p style="margin-top:8px;color:#fff;">&copy; 2025 Pemerintah Kecamatan Makale - Kabupaten Tana Toraja</p></footer>
+<script src="js/script.js"></script></body></html>
